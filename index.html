@@ -1,643 +1,501 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A little romantic world made specially for Baby Wadi. Happy Baby's Day, November 20, 2026."
+    />
 
-    <meta name="description" content="A little romantic world made specially for Baby Wadi. Happy Baby's Day, November 20, 2026.">
-
-    <meta name="theme-color" content="#f8eaf3">
+    <meta name="theme-color" content="#f8eaf3" />
 
     <title>For My Baby Wadi ❤️</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="background-glow"></div>
     <div class="petal-container" id="petalContainer"></div>
 
     <header class="header">
+      <a href="#" class="logo">For Wadi <span>♡</span></a>
 
-        <a href="#" class="logo">For Wadi <span>♡</span></a>
+      <div class="header-right">
+        <select id="languageSelect" aria-label="Choose language">
+          <option value="en">English</option>
+          <option value="my">မြန်မာ</option>
+          <option value="th">ไทย</option>
+        </select>
 
-        <div class="header-right">
-
-            <select id="languageSelect" aria-label="Choose language">
-                <option value="en">English</option>
-                <option value="my">မြန်မာ</option>
-                <option value="th">ไทย</option>
-            </select>
-
-            <button class="music-button" id="musicButton" aria-label="Play music">
-                <span id="musicIcon">♫</span>
-                <span id="musicLabel">Music</span>
-            </button>
-
-        </div>
-
+        <button class="music-button" id="musicButton" aria-label="Play music">
+          <span id="musicIcon">♫</span>
+          <span id="musicLabel">Music</span>
+        </button>
+      </div>
     </header>
 
     <main>
+      <!-- INTRODUCTION -->
 
-        <!-- INTRODUCTION -->
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <span class="eyebrow" data-i18n="heroEyebrow">
+            A LITTLE SURPRISE FOR SOMEONE SPECIAL
+          </span>
 
-        <section class="hero section" id="home">
+          <div class="hero-decoration">✧</div>
 
-            <div class="hero-content">
+          <h1>
+            <span data-i18n="heroTitle">For My</span>
+            <span class="script-title">Baby Wadi</span>
+          </h1>
 
-                <span class="eyebrow" data-i18n="heroEyebrow">
-                    A LITTLE SURPRISE FOR SOMEONE SPECIAL
-                </span>
+          <p class="hero-description" data-i18n="heroDescription">
+            Someone made a little world just for you. Every word, every detail
+            and every surprise is here to make you smile.
+          </p>
 
-                <div class="hero-decoration">✧</div>
+          <div class="hero-date">
+            <span>20</span>
+            <div>
+              <strong>NOVEMBER</strong>
+              <small>2026</small>
+            </div>
+          </div>
 
-                <h1>
-                    <span data-i18n="heroTitle">For My</span>
-                    <span class="script-title">Baby Wadi</span>
-                </h1>
+          <button class="primary-button" id="startButton">
+            <span data-i18n="startButton">Open Your Surprise</span>
+            <span>♡</span>
+          </button>
 
-                <p class="hero-description" data-i18n="heroDescription">
-                    Someone made a little world just for you.
-                    Every word, every detail and every surprise
-                    is here to make you smile.
-                </p>
+          <p class="small-note" data-i18n="heroNote">
+            Made with love, just for you.
+          </p>
+        </div>
 
-                <div class="hero-date">
-                    <span>20</span>
-                    <div>
-                        <strong>NOVEMBER</strong>
-                        <small>2026</small>
-                    </div>
-                </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
 
-                <button class="primary-button" id="startButton">
-                    <span data-i18n="startButton">Open Your Surprise</span>
-                    <span>♡</span>
-                </button>
+          <div class="hero-heart">♥</div>
 
-                <p class="small-note" data-i18n="heroNote">
-                    Made with love, just for you.
-                </p>
+          <span class="floating-star star-one">✧</span>
+          <span class="floating-star star-two">✦</span>
+          <span class="floating-star star-three">✧</span>
+          <span class="floating-star star-four">✦</span>
 
+          <div class="hero-circle-text">A DAY MADE FOR YOU</div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span data-i18n="scrollText">A little world awaits</span>
+          <span>↓</span>
+        </div>
+      </section>
+
+      <!-- WELCOME -->
+
+      <section class="welcome section reveal" id="welcome">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="welcomeEyebrow">
+            TODAY IS YOUR DAY
+          </span>
+
+          <h2 data-i18n="welcomeTitle">Happy Baby's Day</h2>
+
+          <div class="heading-decoration">♡</div>
+        </div>
+
+        <div class="welcome-card">
+          <div class="welcome-icon">✿</div>
+
+          <h3 data-i18n="welcomeGreeting">Hello, my lovely Wadi.</h3>
+
+          <p data-i18n="welcomeText">
+            Today is not just another day. It is a little celebration dedicated
+            to you. I wanted to create something special, something you could
+            open and smile at, even when we are in different countries. So, take
+            your time and enjoy every little surprise.
+          </p>
+
+          <span class="signature">With love, always ♡</span>
+        </div>
+      </section>
+
+      <!-- OUR STORY -->
+
+      <section class="story section reveal" id="story">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="storyEyebrow">
+            OUR LITTLE STORY
+          </span>
+
+          <h2 data-i18n="storyTitle">Somehow, We Found Each Other Again</h2>
+
+          <p data-i18n="storySubtitle">
+            Some connections deserve another chapter.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">♡</div>
+
+            <div class="timeline-card">
+              <span class="timeline-number">01</span>
+
+              <h3 data-i18n="storyOneTitle">When We First Connected</h3>
+
+              <p data-i18n="storyOneText">
+                We got to know each other and there were feelings between us. A
+                little connection began, even though we didn't know what the
+                future would bring.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">✧</div>
+
+            <div class="timeline-card">
+              <span class="timeline-number">02</span>
+
+              <h3 data-i18n="storyTwoTitle">A Year of Silence</h3>
+
+              <p data-i18n="storyTwoText">
+                Life brought some situations that kept us from talking. One
+                whole year passed without our conversations. But that was not
+                the end of our story.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">♥</div>
+
+            <div class="timeline-card">
+              <span class="timeline-number">03</span>
+
+              <h3 data-i18n="storyThreeTitle">
+                One Message Changed Everything
+              </h3>
+
+              <p data-i18n="storyThreeText">
+                After a year, I decided to message you again on Telegram. And we
+                started talking once more. I am genuinely happy that I did.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">✿</div>
+
+            <div class="timeline-card">
+              <span class="timeline-number">04</span>
+
+              <h3 data-i18n="storyFourTitle">A New Chapter</h3>
+
+              <p data-i18n="storyFourText">
+                We haven't met in person yet, but I look forward to the day we
+                finally get that chance. Until then, let's make more beautiful
+                memories through our conversations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISTANCE -->
+
+      <section class="distance section reveal" id="distance">
+        <div class="distance-content">
+          <span class="eyebrow" data-i18n="distanceEyebrow">
+            TWO COUNTRIES, ONE CONNECTION
+          </span>
+
+          <h2 data-i18n="distanceTitle">Miles Apart, Still Close at Heart</h2>
+
+          <div class="country-display">
+            <div class="country">
+              <span class="country-flag">🇲🇲</span>
+              <h3>Myanmar</h3>
+              <small data-i18n="myanmarLabel">Where I am</small>
             </div>
 
-            <div class="hero-visual">
-
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-
-                <div class="hero-heart">♥</div>
-
-                <span class="floating-star star-one">✧</span>
-                <span class="floating-star star-two">✦</span>
-                <span class="floating-star star-three">✧</span>
-                <span class="floating-star star-four">✦</span>
-
-                <div class="hero-circle-text">
-                    A DAY MADE FOR YOU
-                </div>
-
+            <div class="distance-heart">
+              <span>♥</span>
+              <div class="connection-line"></div>
+              <span>♥</span>
             </div>
 
-            <div class="scroll-indicator">
-                <span data-i18n="scrollText">A little world awaits</span>
-                <span>↓</span>
+            <div class="country">
+              <span class="country-flag">🇹🇭</span>
+              <h3>Thailand</h3>
+              <small data-i18n="thailandLabel">Where you are</small>
             </div>
-
-        </section>
-
-        <!-- WELCOME -->
-
-        <section class="welcome section reveal" id="welcome">
-
-            <div class="section-heading">
-
-                <span class="eyebrow" data-i18n="welcomeEyebrow">
-                    TODAY IS YOUR DAY
-                </span>
-
-                <h2 data-i18n="welcomeTitle">
-                    Happy Baby's Day
-                </h2>
-
-                <div class="heading-decoration">♡</div>
-
-            </div>
-
-            <div class="welcome-card">
-
-                <div class="welcome-icon">✿</div>
-
-                <h3 data-i18n="welcomeGreeting">
-                    Hello, my lovely Wadi.
-                </h3>
-
-                <p data-i18n="welcomeText">
-                    Today is not just another day.
-                    It is a little celebration dedicated to you.
-
-                    I wanted to create something special,
-                    something you could open and smile at,
-                    even when we are in different countries.
-
-                    So, take your time and enjoy every little surprise.
-                </p>
-
-                <span class="signature">With love, always ♡</span>
-
-            </div>
-
-        </section>
-
-        <!-- OUR STORY -->
-
-        <section class="story section reveal" id="story">
-
-            <div class="section-heading">
-
-                <span class="eyebrow" data-i18n="storyEyebrow">
-                    OUR LITTLE STORY
-                </span>
-
-                <h2 data-i18n="storyTitle">
-                    Somehow, We Found Each Other Again
-                </h2>
-
-                <p data-i18n="storySubtitle">
-                    Some connections deserve another chapter.
-                </p>
-
-            </div>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot">♡</div>
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-number">01</span>
-
-                        <h3 data-i18n="storyOneTitle">
-                            When We First Connected
-                        </h3>
-
-                        <p data-i18n="storyOneText">
-                            We got to know each other and there
-                            were feelings between us.
-                            A little connection began,
-                            even though we didn't know what
-                            the future would bring.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot">✧</div>
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-number">02</span>
-
-                        <h3 data-i18n="storyTwoTitle">
-                            A Year of Silence
-                        </h3>
-
-                        <p data-i18n="storyTwoText">
-                            Life brought some situations that
-                            kept us from talking.
-                            One whole year passed without
-                            our conversations.
-                            But that was not the end of our story.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot">♥</div>
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-number">03</span>
-
-                        <h3 data-i18n="storyThreeTitle">
-                            One Message Changed Everything
-                        </h3>
-
-                        <p data-i18n="storyThreeText">
-                            After a year, I decided to message
-                            you again on Telegram.
-                            And we started talking once more.
-                            I am genuinely happy that I did.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot">✿</div>
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-number">04</span>
-
-                        <h3 data-i18n="storyFourTitle">
-                            A New Chapter
-                        </h3>
-
-                        <p data-i18n="storyFourText">
-                            We haven't met in person yet,
-                            but I look forward to the day
-                            we finally get that chance.
-                            Until then, let's make more
-                            beautiful memories through our conversations.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- DISTANCE -->
-
-        <section class="distance section reveal" id="distance">
-
-            <div class="distance-content">
-
-                <span class="eyebrow" data-i18n="distanceEyebrow">
-                    TWO COUNTRIES, ONE CONNECTION
-                </span>
-
-                <h2 data-i18n="distanceTitle">
-                    Miles Apart, Still Close at Heart
-                </h2>
-
-                <div class="country-display">
-
-                    <div class="country">
-                        <span class="country-flag">🇲🇲</span>
-                        <h3>Myanmar</h3>
-                        <small data-i18n="myanmarLabel">Where I am</small>
-                    </div>
-
-                    <div class="distance-heart">
-                        <span>♥</span>
-                        <div class="connection-line"></div>
-                        <span>♥</span>
-                    </div>
-
-                    <div class="country">
-                        <span class="country-flag">🇹🇭</span>
-                        <h3>Thailand</h3>
-                        <small data-i18n="thailandLabel">Where you are</small>
-                    </div>
-
-                </div>
-
-                <p class="distance-message" data-i18n="distanceText">
-                    Different places, different skies,
-                    but I am happy that we can still talk,
-                    laugh and share little moments together.
-
-                    I hope one day the distance between
-                    us becomes just a memory.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- REASONS -->
-
-        <section class="reasons section reveal" id="reasons">
-
-            <div class="section-heading">
-
-                <span class="eyebrow" data-i18n="reasonsEyebrow">
-                    A FEW LITTLE THINGS
-                </span>
-
-                <h2 data-i18n="reasonsTitle">
-                    Reasons Why You Are Special
-                </h2>
-
-                <p data-i18n="reasonsSubtitle">
-                    Tap each card and discover a little message.
-                </p>
-
-            </div>
-
-            <div class="reasons-grid" id="reasonsGrid">
-
-                <button class="reason-card" data-message="reasonOne">
-                    <span class="reason-icon">♡</span>
-                    <span class="reason-number">01</span>
-                    <span class="reason-label" data-i18n="reasonOneTitle">
-                        Your Presence
-                    </span>
-                    <span class="reason-hint" data-i18n="tapHint">
-                        Tap to reveal
-                    </span>
-                </button>
-
-                <button class="reason-card" data-message="reasonTwo">
-                    <span class="reason-icon">✧</span>
-                    <span class="reason-number">02</span>
-                    <span class="reason-label" data-i18n="reasonTwoTitle">
-                        Your Smile
-                    </span>
-                    <span class="reason-hint" data-i18n="tapHint">
-                        Tap to reveal
-                    </span>
-                </button>
-
-                <button class="reason-card" data-message="reasonThree">
-                    <span class="reason-icon">✿</span>
-                    <span class="reason-number">03</span>
-                    <span class="reason-label" data-i18n="reasonThreeTitle">
-                        Our Conversations
-                    </span>
-                    <span class="reason-hint" data-i18n="tapHint">
-                        Tap to reveal
-                    </span>
-                </button>
-
-                <button class="reason-card" data-message="reasonFour">
-                    <span class="reason-icon">♥</span>
-                    <span class="reason-number">04</span>
-                    <span class="reason-label" data-i18n="reasonFourTitle">
-                        Being You
-                    </span>
-                    <span class="reason-hint" data-i18n="tapHint">
-                        Tap to reveal
-                    </span>
-                </button>
-
-            </div>
-
-        </section>
-
-        <!-- SURPRISE BOXES -->
-
-        <section class="surprises section reveal" id="surprises">
-
-            <div class="section-heading">
-
-                <span class="eyebrow" data-i18n="surpriseEyebrow">
-                    SOMETHING JUST FOR YOU
-                </span>
-
-                <h2 data-i18n="surpriseTitle">
-                    Little Surprises
-                </h2>
-
-                <p data-i18n="surpriseSubtitle">
-                    There are a few things I want you to discover.
-                </p>
-
-            </div>
-
-            <div class="surprise-grid">
-
-                <button class="surprise-card" data-surprise="surpriseOne">
-                    <span class="gift-icon">🎁</span>
-                    <span data-i18n="giftOne">A Little Compliment</span>
-                    <small data-i18n="openGift">Open surprise ♡</small>
-                </button>
-
-                <button class="surprise-card" data-surprise="surpriseTwo">
-                    <span class="gift-icon">💌</span>
-                    <span data-i18n="giftTwo">A Little Promise</span>
-                    <small data-i18n="openGift">Open surprise ♡</small>
-                </button>
-
-                <button class="surprise-card" data-surprise="surpriseThree">
-                    <span class="gift-icon">✨</span>
-                    <span data-i18n="giftThree">A Little Wish</span>
-                    <small data-i18n="openGift">Open surprise ♡</small>
-                </button>
-
-                <button class="surprise-card" data-surprise="surpriseFour">
-                    <span class="gift-icon">❤️</span>
-                    <span data-i18n="giftFour">Something From My Heart</span>
-                    <small data-i18n="openGift">Open surprise ♡</small>
-                </button>
-
-            </div>
-
-        </section>
-
-        <!-- LOVE LETTER -->
-
-        <section class="letter section reveal" id="letter">
-
-            <div class="section-heading">
-
-                <span class="eyebrow" data-i18n="letterEyebrow">
-                    WORDS FROM MY HEART
-                </span>
-
-                <h2 data-i18n="letterTitle">
-                    A Letter For You
-                </h2>
-
-            </div>
-
-            <div class="letter-paper">
-
-                <div class="letter-top">♡</div>
-
-                <h3 data-i18n="letterGreeting">
-                    My Dearest Wadi,
-                </h3>
-
-                <div class="letter-content" id="letterContent">
-
-                    <p>
-                        I don't really know where to begin,
-                        but I want you to know how happy I am
-                        that we started talking again.
-                    </p>
-
-                    <p>
-                        We knew each other before, and we both
-                        had feelings. Then life happened,
-                        and for some reasons we couldn't
-                        talk for an entire year.
-                    </p>
-
-                    <p>
-                        One day, I decided to send you a message
-                        on Telegram. Maybe it was a small action,
-                        but it gave us another chance to talk.
-                        And I am glad I did.
-                    </p>
-
-                    <p>
-                        Even though we haven't met in real life,
-                        I enjoy having you in my days.
-                        Your messages, our conversations
-                        and the little moments we share
-                        mean more than you might realise.
-                    </p>
-
-                    <p>
-                        I don't know exactly what every day
-                        in the future will bring, but I hope
-                        we continue to understand each other,
-                        support each other and create
-                        something beautiful together.
-                    </p>
-
-                    <p>
-                        One day, I hope we can finally meet
-                        and turn all these conversations
-                        into a real-life memory.
-                    </p>
-
-                    <p>
-                        Until that day comes, please take care
-                        of yourself, keep smiling and remember
-                        that you are special to me.
-                    </p>
-
-                    <p class="letter-ending">
-                        Happy Baby's Day, my Wadi.
-                        You deserve all the beautiful things
-                        in this world.
-                    </p>
-
-                </div>
-
-                <div class="letter-signature">
-                    <span data-i18n="letterClosing">With all my love,</span>
-                    <strong>Someone who is happy to have found you again ♡</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- FINAL SURPRISE -->
-
-        <section class="final-section section reveal" id="final">
-
-            <div class="final-stars">
-                <span>✦</span>
-                <span>✧</span>
-                <span>✦</span>
-                <span>✧</span>
-                <span>✦</span>
-            </div>
-
-            <div class="final-content">
-
-                <span class="eyebrow" data-i18n="finalEyebrow">
-                    ONE LAST LITTLE THING
-                </span>
-
-                <div class="final-heart">♥</div>
-
-                <h2 data-i18n="finalTitle">
-                    Until We Meet for the First Time
-                </h2>
-
-                <p data-i18n="finalText">
-                    We haven't had our first meeting yet.
-                    We haven't shared those real-life moments.
-                    But I hope that one day,
-                    we will finally stand in front of each other
-                    and smile.
-
-                    Until then, I am happy that our story
-                    has another chapter.
-                </p>
-
-                <h3 data-i18n="finalWish">
-                    Happy Baby's Day, Baby Wadi.
-                </h3>
-
-                <span class="final-signature">Made with love ♡</span>
-
-                <button class="primary-button final-button" id="finalButton">
-                    <span data-i18n="finalButton">One More Surprise</span>
-                    <span>♡</span>
-                </button>
-
-            </div>
-
-        </section>
-
+          </div>
+
+          <p class="distance-message" data-i18n="distanceText">
+            Different places, different skies, but I am happy that we can still
+            talk, laugh and share little moments together. I hope one day the
+            distance between us becomes just a memory.
+          </p>
+        </div>
+      </section>
+
+      <!-- REASONS -->
+
+      <section class="reasons section reveal" id="reasons">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="reasonsEyebrow">
+            A FEW LITTLE THINGS
+          </span>
+
+          <h2 data-i18n="reasonsTitle">Reasons Why You Are Special</h2>
+
+          <p data-i18n="reasonsSubtitle">
+            Tap each card and discover a little message.
+          </p>
+        </div>
+
+        <div class="reasons-grid" id="reasonsGrid">
+          <button class="reason-card" data-message="reasonOne">
+            <span class="reason-icon">♡</span>
+            <span class="reason-number">01</span>
+            <span class="reason-label" data-i18n="reasonOneTitle">
+              Your Presence
+            </span>
+            <span class="reason-hint" data-i18n="tapHint"> Tap to reveal </span>
+          </button>
+
+          <button class="reason-card" data-message="reasonTwo">
+            <span class="reason-icon">✧</span>
+            <span class="reason-number">02</span>
+            <span class="reason-label" data-i18n="reasonTwoTitle">
+              Your Smile
+            </span>
+            <span class="reason-hint" data-i18n="tapHint"> Tap to reveal </span>
+          </button>
+
+          <button class="reason-card" data-message="reasonThree">
+            <span class="reason-icon">✿</span>
+            <span class="reason-number">03</span>
+            <span class="reason-label" data-i18n="reasonThreeTitle">
+              Our Conversations
+            </span>
+            <span class="reason-hint" data-i18n="tapHint"> Tap to reveal </span>
+          </button>
+
+          <button class="reason-card" data-message="reasonFour">
+            <span class="reason-icon">♥</span>
+            <span class="reason-number">04</span>
+            <span class="reason-label" data-i18n="reasonFourTitle">
+              Being You
+            </span>
+            <span class="reason-hint" data-i18n="tapHint"> Tap to reveal </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- SURPRISE BOXES -->
+
+      <section class="surprises section reveal" id="surprises">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="surpriseEyebrow">
+            SOMETHING JUST FOR YOU
+          </span>
+
+          <h2 data-i18n="surpriseTitle">Little Surprises</h2>
+
+          <p data-i18n="surpriseSubtitle">
+            There are a few things I want you to discover.
+          </p>
+        </div>
+
+        <div class="surprise-grid">
+          <button class="surprise-card" data-surprise="surpriseOne">
+            <span class="gift-icon">🎁</span>
+            <span data-i18n="giftOne">A Little Compliment</span>
+            <small data-i18n="openGift">Open surprise ♡</small>
+          </button>
+
+          <button class="surprise-card" data-surprise="surpriseTwo">
+            <span class="gift-icon">💌</span>
+            <span data-i18n="giftTwo">A Little Promise</span>
+            <small data-i18n="openGift">Open surprise ♡</small>
+          </button>
+
+          <button class="surprise-card" data-surprise="surpriseThree">
+            <span class="gift-icon">✨</span>
+            <span data-i18n="giftThree">A Little Wish</span>
+            <small data-i18n="openGift">Open surprise ♡</small>
+          </button>
+
+          <button class="surprise-card" data-surprise="surpriseFour">
+            <span class="gift-icon">❤️</span>
+            <span data-i18n="giftFour">Something From My Heart</span>
+            <small data-i18n="openGift">Open surprise ♡</small>
+          </button>
+        </div>
+      </section>
+
+      <!-- LOVE LETTER -->
+
+      <section class="letter section reveal" id="letter">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="letterEyebrow">
+            WORDS FROM MY HEART
+          </span>
+
+          <h2 data-i18n="letterTitle">A Letter For You</h2>
+        </div>
+
+        <div class="letter-paper">
+          <div class="letter-top">♡</div>
+
+          <h3 data-i18n="letterGreeting">My Dearest Wadi,</h3>
+
+          <div class="letter-content" id="letterContent">
+            <p>
+              I don't really know where to begin, but I want you to know how
+              happy I am that we started talking again.
+            </p>
+
+            <p>
+              We knew each other before, and we both had feelings. Then life
+              happened, and for some reasons we couldn't talk for an entire
+              year.
+            </p>
+
+            <p>
+              One day, I decided to send you a message on Telegram. Maybe it was
+              a small action, but it gave us another chance to talk. And I am
+              glad I did.
+            </p>
+
+            <p>
+              Even though we haven't met in real life, I enjoy having you in my
+              days. Your messages, our conversations and the little moments we
+              share mean more than you might realise.
+            </p>
+
+            <p>
+              I don't know exactly what every day in the future will bring, but
+              I hope we continue to understand each other, support each other
+              and create something beautiful together.
+            </p>
+
+            <p>
+              One day, I hope we can finally meet and turn all these
+              conversations into a real-life memory.
+            </p>
+
+            <p>
+              Until that day comes, please take care of yourself, keep smiling
+              and remember that you are special to me.
+            </p>
+
+            <p class="letter-ending">
+              Happy Baby's Day, my Wadi. You deserve all the beautiful things in
+              this world.
+            </p>
+          </div>
+
+          <div class="letter-signature">
+            <span data-i18n="letterClosing">With all my love,</span>
+            <strong>Someone who is happy to have found you again, John♡</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL SURPRISE -->
+
+      <section class="final-section section reveal" id="final">
+        <div class="final-stars">
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+        </div>
+
+        <div class="final-content">
+          <span class="eyebrow" data-i18n="finalEyebrow">
+            ONE LAST LITTLE THING
+          </span>
+
+          <div class="final-heart">♥</div>
+
+          <h2 data-i18n="finalTitle">Until We Meet for the First Time</h2>
+
+          <p data-i18n="finalText">
+            We haven't had our first meeting yet. We haven't shared those
+            real-life moments. But I hope that one day, we will finally stand in
+            front of each other and smile. Until then, I am happy that our story
+            has another chapter.
+          </p>
+
+          <h3 data-i18n="finalWish">Happy Baby's Day, Baby Wadi.</h3>
+
+          <span class="final-signature">Made with love ♡</span>
+
+          <button class="primary-button final-button" id="finalButton">
+            <span data-i18n="finalButton">One More Surprise</span>
+            <span>♡</span>
+          </button>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
 
     <footer class="footer">
+      <div class="footer-heart">♡</div>
 
-        <div class="footer-heart">♡</div>
+      <p data-i18n="footerText">A little world, created just for you.</p>
 
-        <p data-i18n="footerText">
-            A little world, created just for you.
-        </p>
+      <span>20.11.2026</span>
 
-        <span>20.11.2026</span>
-
-        <small>Made with love for Baby Wadi ❤️</small>
-
+      <small>Made with love for Baby Wadi ❤️</small>
     </footer>
 
     <!-- POPUP -->
 
     <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-box">
+        <button class="popup-close" id="popupClose">×</button>
 
-        <div class="popup-box">
+        <div class="popup-decoration">✧</div>
 
-            <button class="popup-close" id="popupClose">×</button>
+        <div class="popup-icon" id="popupIcon">♡</div>
 
-            <div class="popup-decoration">✧</div>
+        <h2 id="popupTitle">A little message</h2>
 
-            <div class="popup-icon" id="popupIcon">♡</div>
+        <p id="popupMessage"></p>
 
-            <h2 id="popupTitle">A little message</h2>
-
-            <p id="popupMessage"></p>
-
-            <button class="primary-button" id="popupOkay">
-                <span data-i18n="popupButton">Aww, thank you ♡</span>
-            </button>
-
-        </div>
-
+        <button class="primary-button" id="popupOkay">
+          <span data-i18n="popupButton">Aww, thank you ♡</span>
+        </button>
+      </div>
     </div>
 
     <!-- MUSIC -->
 
-    <audio id="backgroundMusic" loop preload="none">
-        <source src="song.mp3" type="audio/mpeg">
+    <audio id="backgroundMusic" loop autoplay>
+      <source src="song.mp3" type="audio/mpeg" />
     </audio>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
